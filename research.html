@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Research – Michele Grimaldi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research and publications: AI memory, agents, audio ML/DSP, experiments.">
+    <meta name="color-scheme" content="dark light">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-light">
+
+    <a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-opacity-25">
+        <div class="container-xxl">
+            <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/img/logo.png" alt="" class="brand-logo" />
+                <span>Michele Grimaldi</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="research.html"
+                            aria-current="page">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main" class="container-xxl py-5">
+        <header class="mb-4 text-center text-md-start">
+            <h1 class="display-6 fw-semibold mb-2">Research & Publications</h1>
+            <p class="text-secondary mb-0">AI Memory · Agents · Audio ML/DSP · Notes</p>
+        </header>
+
+        <!-- Filtri -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-sm btn-outline-light active" data-filter="all">All</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="Agents">Agents</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="Memory">Memory</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="Audio ML">Audio ML</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="DSP">DSP</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="Notes">Notes</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+
+            <!-- NoVa -->
+            <div class="col project-card" data-tags="Agents,Memory">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/nova.jpg');"></div>
+                    <h2 class="h5 fw-semibold mb-2">NoVa – Personalized AI Agent</h2>
+                    <p class="text-secondary mb-3">Multi-model LLM agent with contextual memory, tool use, and
+                        autonomous behaviors.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Agents</span>
+                        <span class="badge-tag">Memory</span>
+                        <span class="badge-tag">Python</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link"
+                            href="https://app.readytensor.ai/publications/nova-a-personalized-ai-assistant-for-autonomous-agentic-interaction-GyV7qnYs2Bsc"
+                            target="_blank">ReadyTensor Publication</a>
+                        <a class="link" href="https://github.com/Mike014" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OMNIA -->
+            <div class="col project-card" data-tags="Audio ML,DSP">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/omnia.jpg');"></div>
+                    <h2 class="h5 fw-semibold mb-2">OMNIA – Perceptual Audio AI</h2>
+                    <p class="text-secondary mb-3">CNN autoencoder for audio spectrogram denoising/reconstruction,
+                        inspired by perceptual models.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Audio ML</span>
+                        <span class="badge-tag">DSP</span>
+                        <span class="badge-tag">PyTorch</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link"
+                            href="https://app.readytensor.ai/publications/omnia-hybrid-autoencoder-for-audio-spectrogram-enhancement-KhtMBX6Xs5fP"
+                            target="_blank">ReadyTensor Publication</a>
+                        <a class="link" href="https://github.com/Mike014" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory Augmented AI -->
+            <div class="col project-card" data-tags="Memory,Notes">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/memory.jfif');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Memory-Augmented AI Architectures</h2>
+                    <p class="text-secondary mb-3">Zenodo paper proposing unified working/short/long-term memory
+                        framework for AI.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Memory</span>
+                        <span class="badge-tag">Agents</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link" href="https://zenodo.org/records/14976723" target="_blank">Zenodo First
+                            Publication</a>
+                        <a class="link" href="https://zenodo.org/records/14988996" target="_blank">Zenodo Second
+                            Publication</a>
+                        <a class="link" href="https://github.com/Mike014/Memory_Augmented_AI" target="_blank">Indexed
+                            research compendium on memory-augmented AI architectures.</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Physics Research -->
+            <div class="col project-card" data-tags="Audio ML">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/logo.png');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Audio Physics Research</h2>
+                    <p class="text-secondary mb-3">Comprehensive research series exploring audio signal processing,
+                        acoustics, and digital audio theory (in Italian).</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Research</span>
+                        <span class="badge-tag">Audio ML</span>
+                        <span class="badge-tag">Physics</span>
+                        <span class="badge-tag">DSP</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link"
+                            href="https://www.youtube.com/watch?v=sQ9MVQWB868&list=PLgKASgLUSpNbvO4I4iia5Czahy57vtG5R"
+                            target="_blank">YouTube Playlist</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Programming & DSP Showcase -->
+            <div class="col project-card" data-tags="DSP, Audio ML">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/logo.png');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Audio Programming & DSP Showcase</h2>
+                    <p class="text-secondary mb-3">Practical demonstrations of audio programming techniques and digital
+                        signal processing implementations.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Programming</span>
+                        <span class="badge-tag">DSP</span>
+                        <span class="badge-tag">Audio ML</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link"
+                            href="https://www.youtube.com/watch?v=t12Ck5E4OTk&list=PLgKASgLUSpNZxdT7OsJrw54KmJmCica6m"
+                            target="_blank">YouTube Playlist</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Gaming Journalism -->
+            <div class="col project-card" data-tags="Notes">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/logo.png');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Gaming Journalism</h2>
+                    <p class="text-secondary mb-3">Freelance gaming journalist covering industry events and game
+                        releases, with published articles on major gaming events and digital card games.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Writing</span>
+                        <span class="badge-tag">Gaming</span>
+                        <span class="badge-tag">Journalism</span>
+                        <span class="badge-tag">Notes</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link" href="https://www.icrewplay.com/bethesda-presente-alla-milan-games-week-2023/" target="_blank">Bethesda at Milan Games Week 2023</a>
+                        <a class="link" href="https://www.icrewplay.com/yu-gi-oh-duel-links-gr-festval-celebration-campaign/" target="_blank">Yu-Gi-Oh! Duel Links GR Festival Campaign</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black py-4 mt-5 border-top border-opacity-25">
+        <div class="container-xxl text-center small">
+            © <span id="year"></span> Michele Grimaldi ·
+            <a class="text-decoration-none" href="https://github.com/Mike014" target="_blank">GitHub</a> ·
+            <a class="text-decoration-none" href="https://www.youtube.com/@AuTomA_014" target="_blank">YouTube</a> ·
+            <a class="text-decoration-none" href="https://michelegrimaldi014.bandcamp.com/" target="_blank">Bandcamp</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Filtri con supporto a ?filter=
+        const filterBtns = document.querySelectorAll('[data-filter]');
+        const cards = document.querySelectorAll('.project-card');
+
+        function applyFilter(selected) {
+            const sel = (selected || 'all').trim();
+            filterBtns.forEach(b => {
+                const bf = b.getAttribute('data-filter') || '';
+                const isActive = sel.toLowerCase() === bf.toLowerCase();
+                b.classList.toggle('active', isActive);
+                if (isActive) b.setAttribute('aria-current', 'true');
+                else b.removeAttribute('aria-current');
+            });
+
+            cards.forEach(card => {
+                if (sel.toLowerCase() === 'all') { card.classList.remove('d-none'); return; }
+                const tags = (card.getAttribute('data-tags') || '')
+                    .split(',')
+                    .map(s => s.trim().toLowerCase());
+                card.classList.toggle('d-none', !tags.includes(sel.toLowerCase()));
+            });
+
+            const params = new URLSearchParams(window.location.search);
+            if (sel.toLowerCase() === 'all') params.delete('filter');
+            else params.set('filter', sel);
+            const newUrl = params.toString()
+                ? `${window.location.pathname}?${params.toString()}`
+                : window.location.pathname;
+            window.history.replaceState(null, '', newUrl);
+        }
+
+        const initialFilter = new URLSearchParams(window.location.search).get('filter') || 'all';
+        applyFilter(initialFilter);
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => applyFilter(btn.getAttribute('data-filter')));
+        });
+    </script>
+</body>
+
+</html>

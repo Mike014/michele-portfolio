@@ -1,0 +1,71 @@
+/* Palette scura "audio-tech" */
+:root {
+  --ink: #0B0F14;
+  --mist: #E6EAF2;
+  --accent: #38BDF8;
+}
+
+/* Preferenze utente */
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
+
+/* Body e link */
+html { color-scheme: dark; }
+body { background: var(--ink); color: var(--mist); }
+a { color: var(--accent); }
+a:hover { opacity: .9; }
+
+/* Logo navbar */
+.brand-logo {
+  height: 28px; width: auto; display: block;
+}
+
+/* Card e bottoni */
+.card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 1rem;
+}
+.btn-primary { background: var(--accent); border-color: var(--accent); color:#000; }
+
+/* Skip link visibile al focus */
+.skip-link {
+  position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+}
+.skip-link:focus {
+  position: static; width: auto; height: auto; padding: .5rem .75rem; background: #000; border-radius: .5rem;
+}
+
+/* Hero lead centrata, larghezza leggibile su desktop */
+.hero-lead { max-width: 60ch; }
+
+/* Micro-tweak responsive */
+@media (max-width: 575.98px) {
+  h1.display-5 { font-size: 2rem; }
+  .hero-lead { font-size: 1rem; }
+}
+
+@media (min-width: 992px) {
+  header.py-5 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+}
+
+/* --- Work page helpers --- */
+.badge-tag{
+  display:inline-block;
+  padding:.25rem .5rem;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:999px;
+  font-size:.75rem;
+  color:#cfd8e3;
+  background:rgba(255,255,255,.04);
+}
+.project-thumb{
+  background:#0b0f14 center/cover no-repeat;
+  border-radius:.75rem;
+  border:1px solid rgba(255,255,255,.08);
+}
+.disabled-link{
+  opacity:.5; pointer-events:none; text-decoration:none;
+}
+

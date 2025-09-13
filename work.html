@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Work – Michele Grimaldi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Selected projects in AI, Game Audio, Backend, and Music Tech.">
+    <meta name="color-scheme" content="dark light">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-light">
+
+    <a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-opacity-25"
+        aria-label="Main navigation">
+        <div class="container-xxl">
+            <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/img/logo.png" alt="" class="brand-logo" />
+                <span>Michele Grimaldi</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="work.html" aria-current="page">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main" class="container-xxl py-5">
+        <header class="mb-4 text-center text-md-start">
+            <h1 class="display-6 fw-semibold mb-2">Selected Work</h1>
+            <p class="text-secondary mb-0">AI · Game Audio · Backend · Music Tech</p>
+        </header>
+
+        <!-- Filtri -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-sm btn-outline-light active" data-filter="all">All</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="AI">AI</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="Game Audio">Game Audio</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="Backend">Backend</button>
+            <button class="btn btn-sm btn-outline-light" data-filter="Music Tech">Music Tech</button>
+        </div>
+
+
+
+        <!-- Grid progetti -->
+        <div id="projectsGrid" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+
+            <!-- NoVa -->
+            <div class="col project-card" data-tags="AI">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/nova.jpg');"></div>
+                    <h2 class="h5 fw-semibold mb-2">NoVa – Personalized AI Agent</h2>
+                    <p class="text-secondary mb-3">Multi-agent with contextual memory, web tools, and autonomous
+                        actions.
+                    </p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Python</span>
+                        <span class="badge-tag">Agents</span>
+                        <span class="badge-tag">RAG</span>
+                    </div>
+                    <div class="mt-auto d-flex gap-3">
+                        <a class="link" href="https://github.com/Mike014/__NoVa__" target="_blank"
+                            rel="noopener">Repo</a>
+                        <!-- <a class="link disabled-link" href="#" aria-disabled="true">Demo</a> -->
+                        <a class="link"
+                            href="https://app.readytensor.ai/publications/nova-a-personalized-ai-assistant-for-autonomous-agentic-interaction-GyV7qnYs2Bsc"
+                            target="_blank" rel="noopener">Case Study</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OMNIA -->
+            <div class="col project-card" data-tags="AI,Music Tech">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/omnia.jpg');"></div>
+                    <h2 class="h5 fw-semibold mb-2">OMNIA – Perceptual Audio AI</h2>
+                    <p class="text-secondary mb-3">Autoencoder on spectrograms; denoising/reconstruction; Keras/PyTorch
+                        pipeline.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">PyTorch</span>
+                        <span class="badge-tag">DSP</span>
+                        <span class="badge-tag">Spectrograms</span>
+                    </div>
+                    <div class="mt-auto d-flex gap-3">
+                        <a class="link"
+                            href="https://github.com/Mike014/My_AI_Engineer_Portfolio_Projects/blob/main/Projects/AudioAI/LSTM_Audio_Lab.ipynb"
+                            target="_blank" rel="noopener">Repo</a>
+                        <a class="link"
+                            href="https://app.readytensor.ai/publications/omnia-hybrid-autoencoder-for-audio-spectrogram-reconstruction-and-enhancement-kZXyHHNcIvf4"
+                            aria-disabled="false">Case Study</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ChordBoard -->
+            <div class="col project-card" data-tags="Game Audio,Backend,AI">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/chordboard.jpg');"></div>
+                    <h2 class="h5 fw-semibold mb-2">ChordBoard – Cross-Platform Audio App</h2>
+                    <p class="text-secondary mb-3">
+                        Enhanced UI components, resolved platform-specific backend issues, and developed robust
+                        cross-platform functionality using C++ with JUCE to ensure seamless operation and stability
+                        across multiple systems.
+                    </p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">C++</span>
+                        <span class="badge-tag">JUCE</span>
+                        <span class="badge-tag">Unreal</span>
+                        <span class="badge-tag">Full-Stack</span>
+                    </div>
+                    <div class="mt-auto d-flex gap-3">
+                        <a class="link" href="https://chordboardmusic.com/" target="_blank" rel="noopener">Official
+                            Site</a>
+                        <!-- <a class="link disabled-link" href="#" aria-disabled="true">Case Study</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Tech Audio/AI Projects -->
+            <div class="col project-card" data-tags="AI,Backend,Music Tech,DSP">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/logo.png');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Personal Tech Audio/AI Projects</h2>
+                    <p class="text-secondary mb-3">
+                        Collection of experimental software projects in DSP, AI/ML, and cross-platform development.
+                        Built with Python, Django, C++/JUCE and featuring robust DSP pipelines, ML prototypes, and
+                        Unreal Engine experiments.
+                    </p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Python</span>
+                        <span class="badge-tag">Django</span>
+                        <span class="badge-tag">JUCE</span>
+                        <span class="badge-tag">C++</span>
+                        <span class="badge-tag">Unreal</span>
+                        <span class="badge-tag">ML/AI</span>
+                        <span class="badge-tag">DSP</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link" href="https://github.com/Mike014/Pink-Noise-Website" target="_blank"
+                            rel="noopener">
+                            Pink-Noise-Website · Simple generator with volume control
+                        </a>
+                        <a class="link" href="https://github.com/Mike014/Audio-Classification" target="_blank"
+                            rel="noopener">
+                            Audio-Classification · Prototype Django app for ML-based audio labeling
+                        </a>
+                        <a class="link" href="https://github.com/Mike014/Audio-Transcription" target="_blank"
+                            rel="noopener">
+                            Audio Transcription · ML tool + speech-to-text
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Audio & Sound Design Projects -->
+            <div class="col project-card" data-tags="Game Audio,Sound Design,Music Tech">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/logo.png');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Game Audio & Sound Design Projects</h2>
+                    <p class="text-secondary mb-3">
+                        Composed music, produced and integrated sound design in multiple released and indie games.
+                        Implemented adaptive audio systems in Unity and Unreal Engine, working on both technical audio
+                        programming and creative production.
+                    </p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Sound Design</span>
+                        <span class="badge-tag">Music Composition</span>
+                        <span class="badge-tag">Unity</span>
+                        <span class="badge-tag">Unreal</span>
+                        <span class="badge-tag">C++</span>
+                        <span class="badge-tag">FMOD</span>
+                        <span class="badge-tag">Wwise</span>
+                    </div>
+                    <div class="mt-auto d-flex flex-column gap-2">
+                        <a class="link" href="https://linktr.ee/MikeTechnicalSoundArtist" target="_blank"
+                            rel="noopener">
+                            Portfolio Linktree · Complete list of released games
+                        </a>
+                        <a class="link" href="https://github.com/Mike014/My-Cpp-Codes-For-UnrealEngine" target="_blank"
+                            rel="noopener">
+                            Unreal Engine C++ · Audio physics & integration experiments
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MovieRanker -->
+            <div class="col project-card" data-tags="Backend">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/logo.png');"></div>
+                    <h2 class="h5 fw-semibold mb-2">MovieRanker – Django + PostgreSQL</h2>
+                    <p class="text-secondary mb-3">Recommendations, CRUD, testing and CI/CD; responsive
+                        UI.Recommendations, CRUD, testing and CI/CD; responsive UI. The project has not been released
+                        yet.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Django</span>
+                        <span class="badge-tag">PostgreSQL</span>
+                        <span class="badge-tag">CI/CD</span>
+                    </div>
+                    <div class="mt-auto d-flex gap-3">
+                        <a class="link" href="https://github.com/Mike014" target="_blank" rel="noopener">Repo</a>
+                        <a class="link disabled-link" href="#" aria-disabled="true">Demo</a>
+                        <a class="link disabled-link" href="#" aria-disabled="true">Case Study</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dialoghi con un’Eco -->
+            <div class="col project-card" data-tags="AI,Game Audio,Music Tech">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/dialoghi.jfif');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Dialoghi con un’Eco – Interactive Narrative</h2>
+                    <p class="text-secondary mb-3">Narrative game with AI systems and adaptive sound design.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Python</span>
+                        <span class="badge-tag">Pygame</span>
+                        <span class="badge-tag">Audio</span>
+                    </div>
+                    <div class="mt-auto d-flex gap-3">
+                        <a class="link" href="https://github.com/Mike014/ai-narrative-prototype" target="_blank"
+                            rel="noopener">Repo</a>
+                        <a class="link" href="https://drive.google.com/file/d/1_aOsyjw9U2sP4UoKko1HF1RCH5PD2LYW/view"
+                            aria-disabled="true">Demo</a>
+                        <!-- <a class="link disabled-link" href="#" aria-disabled="true">Case Study</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Open Source -->
+            <div class="col project-card" data-tags="AI">
+                <div class="card h-100 p-3 d-flex flex-column">
+                    <div class="ratio ratio-16x9 mb-3 project-thumb"
+                        style="background-image:url('assets/img/logo.png');"></div>
+                    <h2 class="h5 fw-semibold mb-2">Open Source Software Contributor</h2>
+                    <p class="text-secondary mb-3">Actively contributed to open source projects through code
+                        contributions, bug fixes, documentation improvements, and community collaboration to advance
+                        software development ecosystems.</p>
+                    <div class="mb-3 d-flex flex-wrap gap-2">
+                        <span class="badge-tag">Python</span>
+                        <span class="badge-tag">Open Source Software</span>
+                    </div>
+                    <div class="mt-auto d-flex gap-3">
+                        <a class="link" href="https://github.com/nltk/nltk/pull/3364" target="_blank"
+                            rel="noopener">NLTK</a>
+                        <a class="link" href="https://github.com/arc53/DocsGPT/pull/1603" target="_blank"
+                            rel="noopener">DocsGPT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black py-4 mt-5 border-top border-opacity-25">
+        <div class="container-xxl text-center small">
+            © <span id="year"></span> Michele Grimaldi ·
+            <a class="text-decoration-none" href="https://github.com/Mike014" target="_blank" rel="noopener">GitHub</a>
+            ·
+            <a class="text-decoration-none" href="https://www.youtube.com/@AuTomA_014" target="_blank"
+                rel="noopener">YouTube</a> ·
+            <a class="text-decoration-none" href="https://michelegrimaldi014.bandcamp.com/" target="_blank"
+                rel="noopener">Bandcamp</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // --- Filtri work.html con supporto a ?filter= ---
+        const filterBtns = document.querySelectorAll('[data-filter]');
+        const cards = document.querySelectorAll('.project-card');
+
+        function applyFilter(selected) {
+            const sel = (selected || 'all').trim();
+            // attiva bottone
+            filterBtns.forEach(b => {
+                const bf = b.getAttribute('data-filter');
+                const isActive = (sel.toLowerCase() === (bf || '').toLowerCase());
+                b.classList.toggle('active', isActive);
+                if (isActive) {
+                    b.setAttribute('aria-current', 'true');
+                } else {
+                    b.removeAttribute('aria-current');
+                }
+            });
+
+            // mostra/nascondi cards
+            cards.forEach(card => {
+                if (sel.toLowerCase() === 'all') {
+                    card.classList.remove('d-none');
+                } else {
+                    const tags = (card.getAttribute('data-tags') || '')
+                        .split(',')
+                        .map(s => s.trim().toLowerCase());
+                    if (tags.includes(sel.toLowerCase())) {
+                        card.classList.remove('d-none');
+                    } else {
+                        card.classList.add('d-none');
+                    }
+                }
+            });
+
+            // aggiorna l’URL senza ricaricare
+            const params = new URLSearchParams(location.search);
+            if (sel.toLowerCase() === 'all') {
+                params.delete('filter');
+            } else {
+                params.set('filter', sel);
+            }
+            const newUrl = params.toString()
+                ? `${location.pathname}?${params.toString()}`
+                : location.pathname;
+            history.replaceState(null, '', newUrl);
+        }
+
+        // filtro iniziale da URL (es. ?filter=AI)
+        const initialFilter = new URLSearchParams(location.search).get('filter') || 'all';
+        applyFilter(initialFilter);
+
+        // click sui bottoni
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                applyFilter(btn.getAttribute('data-filter'));
+            });
+        });
+    </script>
+
+</body>
+
+</html>
